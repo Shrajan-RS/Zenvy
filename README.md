@@ -67,5 +67,5 @@ npm run dev
 
 # If you're using Yarn
 
-yarn install
-yarn dev
+- yarn install
+- yarn dev
