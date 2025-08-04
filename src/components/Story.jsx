@@ -49,7 +49,7 @@ const Story = () => {
     const animationTimeLine = gsap.timeline({
       scrollTrigger: {
         trigger: "#story",
-        start: "top 80% top",
+        start: "top 90% top",
         end: "top center",
         scrub: true,
       },
