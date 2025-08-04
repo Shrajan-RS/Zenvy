@@ -103,7 +103,7 @@ const Features = () => {
     <section className="bg-black pb-52" id="features">
       <div className="container mx-auto px-3 md:px-10 ">
         <div className="py-1 flex justify-center flex-col items-center ">
-          <p className="font-circular-web text-blue-50 text-3xl md:text-8xl font-zentry tracking-widest mt-12 para-animation">
+          <p className=" text-blue-50 text-3xl md:text-8xl font-zentry tracking-widest mt-12 para-animation">
             into the metagame layer
           </p>
           <p className=" font-circular-web text-lg text-blue-50 opacity-50 capitalize mt-4 para-animation text-center">

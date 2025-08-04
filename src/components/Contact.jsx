@@ -16,7 +16,7 @@ const Contact = () => {
     const cardTimeLine = gsap.timeline({
       scrollTrigger: {
         trigger: "#contact",
-        start: "top center",
+        start: "top 30% top",
         end: "bottom 90% top",
         scrub: true,
       },
@@ -28,14 +28,14 @@ const Contact = () => {
         ease: "expo.inOut",
         backgroundColor: "black",
         zIndex: 99,
-        duration: 2,
+        duration: 1,
       })
       .from(card2, {
         xPercent: -100,
         ease: "expo.inOut",
         backgroundColor: "black",
         zIndex: 99,
-        duration: 2,
+        duration: 1,
       });
   });
 
