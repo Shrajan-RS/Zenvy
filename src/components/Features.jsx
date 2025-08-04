@@ -1,3 +1,5 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { useRef, useState } from "react";
 
 const BentoTilt = ({ children, className = "" }) => {
@@ -47,9 +49,9 @@ const Features = () => {
           loop
           autoPlay
           muted
-          className="absolute left-0 top-0 size-full object-cover object-center"
+          className="absolute left-0 top-0 size-full object-cover object-center "
         />
-        <div className="relative z-10 flex size-full flex-col gap-2 p-5 text-blue-50 justify-between">
+        <div className="relative z-10 flex size-full flex-col gap-2 p-5 text-blue-50 justify-between ">
           <div>
             <h1 className="bento-title special-font tracking-widest ">
               {title}
@@ -78,16 +80,35 @@ const Features = () => {
     );
   };
 
+  useGSAP(() => {
+    const textTimeLine = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#nexus",
+        start: "top 90% top",
+        end: "top 40% top",
+        scrub: true,
+      },
+    });
+
+    textTimeLine.from(".para-animation", {
+      opacity: 0,
+      yPercent: 100,
+      duration: 1,
+      stagger: 0.2,
+      ease: "expo.inOut",
+    });
+  });
+
   return (
-    <section className="bg-black pb-52">
-      <div className="container mx-auto px-3 md:px-10">
-        <div className="py-6  ">
-          <p className="font-circular-web text-blue-50 text-lg capitalize mt-12 ">
+    <section className="bg-black pb-52" id="nexus">
+      <div className="container mx-auto px-3 md:px-10 ">
+        <div className="py-1 flex justify-center flex-col items-center ">
+          <p className="font-circular-web text-blue-50 text-3xl md:text-8xl font-zentry tracking-widest mt-12 para-animation">
             into the metagame layer
           </p>
-          <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50 capitalize mt-4">
+          <p className=" font-circular-web text-lg text-blue-50 opacity-50 capitalize mt-4 para-animation text-center">
             immerse yourself in a rich and ever-expanding universe where a
-            vibrant array of the product coverage into the interconnected
+            vibrant array of the <br /> product coverage into the interconnected
             overlay experience on your world.
           </p>
         </div>
@@ -134,7 +155,7 @@ shaping profiles that reflect their legacy."
             />
           </BentoTilt>
 
-          <BentoTilt className="bento-tilt_1   me-14 md:col-span-1 md:me-0">
+          <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0 ">
             <BentoCard
               src="/videos/feature-4.mp4"
               title={

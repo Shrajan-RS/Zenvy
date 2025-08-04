@@ -24,7 +24,6 @@ const About = () => {
       stagger: 0.2,
       ease: "power1.inOut",
       duration: 1,
-      rotateX: "30deg",
     });
 
     const clipTimeLine = gsap.timeline({
