@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isIndicatorActive, setIsIndicatorActive] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isNavVisible, setIsNavVisible] = useState(true);
-  const navLinks = ["nexus", "vault", "prologue", "about", "contact"];
+  const navLinks = ["home", "about", "features", "story", "contact"];
 
   const { y: currentScrollY } = useWindowScroll();
 
@@ -65,7 +65,7 @@ const Navbar = () => {
               id="product-button"
               title="Products"
               rightIcon={<TiLocationArrow />}
-              containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1 hover:bg-yellow-300"
+              containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1  "
             />
           </div>
 

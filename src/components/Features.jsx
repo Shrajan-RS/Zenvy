@@ -83,7 +83,7 @@ const Features = () => {
   useGSAP(() => {
     const textTimeLine = gsap.timeline({
       scrollTrigger: {
-        trigger: "#nexus",
+        trigger: "#features",
         start: "top 90% top",
         end: "top 40% top",
         scrub: true,
@@ -100,7 +100,7 @@ const Features = () => {
   });
 
   return (
-    <section className="bg-black pb-52" id="nexus">
+    <section className="bg-black pb-52" id="features">
       <div className="container mx-auto px-3 md:px-10 ">
         <div className="py-1 flex justify-center flex-col items-center ">
           <p className="font-circular-web text-blue-50 text-3xl md:text-8xl font-zentry tracking-widest mt-12 para-animation">

@@ -50,7 +50,7 @@ const Hero = () => {
   useGSAP(() => {
     const heroTimeLine = gsap.timeline({
       scrollTrigger: {
-        trigger: "#hero-section",
+        trigger: "#home",
         start: "center center",
         end: "bottom center",
         scrub: true,
@@ -70,7 +70,7 @@ const Hero = () => {
 
   return (
     <div
-      id="hero-section"
+      id="home"
       className="relative h-dvh w-screen overflow-x-hidden"
     >
       <div
