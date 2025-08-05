@@ -36,7 +36,11 @@ const Contact = () => {
         backgroundColor: "black",
         zIndex: 99,
         duration: 1,
-      });
+      }).from('.text-animation', {
+        yPercent: 100,
+        opacity: 0,
+
+      })
   });
 
   return (
@@ -67,13 +71,13 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-col items-center text-center">
-          <p className="font-general text-[20px] uppercase">join zenvy</p>
-          <p className="special-font mt-10 w-full font-zentry text-5xl leading-[0.9] md:text-[6rem]">
+          <p className="font-general text-[20px] uppercase text-animation ">join zenvy</p>
+          <p className="special-font mt-10 w-full font-zentry text-5xl leading-[0.9] md:text-[6rem] text-animation">
             let`s b<b>u</b>ild the <br /> new er<b>a</b> of <br /> gaming t
             <b>o</b>gether
           </p>
 
-          <Button title="contact us" containerClass="mt-10 cursor-pointer" />
+          <Button title="contact us" containerClass="mt-10 cursor-pointer text-animation" />
         </div>
       </div>
     </div>
